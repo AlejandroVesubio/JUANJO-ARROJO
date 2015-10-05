@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Juanjo Arrojo</title>
+
+    <!-- Tipografías -->
+    <link href='//fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Juanjo Arrojo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="contacto.html">Contactar</a></li>
+            </ul>
+            <ul class="nav nav-pills navbar-right">
+
+                <li class="hidden-xs hidden-sm hidden-md">
+                    <a href="tel:+34985494267">
+                        <i class="glyphicon glyphicon-phone-alt icon-large"></i>&nbsp;+34 985 49 49 49
+                    </a>
+                </li>
+
+                <li title="+34 985 49 42 67" class="visible-xs visible-sm visible-md">
+                    <a href="tel:+34985494267">
+                        <i class="icon-phone icon-large"></i>
+                    </a>
+                </li>
+
+                <li class="hidden-xs hidden-sm hidden-md">
+                    <a href="mailto:info@elcastaniu.com">
+                        <i class="glyphicon glyphicon-envelope icon-large"></i>&nbsp;info@juanjoarrojo.com
+                    </a>
+                </li>
+
+                <li class="visible-xs visible-sm visible-md">
+                    <a title="info@elcastaniu.com" href="mailto:info@elcastaniu.com">
+                        <i class="icon-envelope-alt icon-large"></i>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-links">
+                <li><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!-- /Barra de navegación -->
+
+
+
+
+
+
+<div class="container-fluid contacto-container">
+    <div class="row contacto-row">
+
+        <div class="col-md-4 titulo-contacto">
+            <h3>Contacto</h3>
+            <p>Para consultas generales o trabajos contactarme en:</p>
+            <a href="mailto:contacto@alfonsoarrojo.com">contacto@alfonsoarrojo.com</a>
+            <p>También puedes contactar conmigo directamente a través de este formulario</p>
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <input id="textinput" name="textinput" placeholder="Nombre" class="form-control input-md" type="text" required>
+                            <span class="help-block">Introduce tu nombre</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <input id="textinput" name="textinput" placeholder="Email" class="form-control input-md" type="email" required>
+                            <span class="help-block">Introduce tu dirección de correo</span>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <input id="textinput" name="textinput" placeholder="Teléfono" class="form-control input-md" type="tel">
+                            <span class="help-block">Opcional</span>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+
+                        <div class="col-md-6">
+                            <textarea class="form-control" id="textarea" name="textarea" placeholder="Comentario"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+
+                        <div class="col-md-4">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-md-7">
+            <img class="img-responsive imagen-contacto" src="images/gente.jpg" alt=""/>
+            <div class="col-md-3 contenido-contacto">
+                <h4>Teléfono</h4>
+                <a href="tel:+34985494267">
+                    <i class="glyphicon glyphicon-phone-alt icon-large"></i>&nbsp;+34 985 49 49 49
+                </a>
+            </div>
+            <div class="col-md-3 contenido-contacto">
+                <h4>Email</h4>
+                <a href="mailto:info@elcastaniu.com">
+                    <i class="glyphicon glyphicon-envelope icon-large"></i>&nbsp;info@juanjoarrojo.com
+                </a>
+            </div>
+        </div>
+
+
+    </div> <!-- /row -->
+    <div class="row">
+        <div class="col-xs-12">
+
+        </div>
+    </div>
+
+</div> <!-- /Container -->
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
