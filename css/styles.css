@@ -7,17 +7,17 @@ body, html {
 }
 
 body {
-    background-color: #fafafa;
-    font-family:  'Montserrat', sans-serif;
+    background-color: #171d25;
+    font-family:  Quattrocento Sans,sans-serif,Verdana;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    color: #222222;
+    color: #d1d1d1;
 }
 
-h3, h4, h5, h6, p { font-family: 'Roboto', sans-serif; }
+h3, h4, h5, h6, p { font-family: Quattrocento Sans,sans-serif }
 
 * {
     -webkit-border-radius: 0 !important;
@@ -27,15 +27,21 @@ h3, h4, h5, h6, p { font-family: 'Roboto', sans-serif; }
 
 a {
     outline: none;
-    color: #757575;
+    color: #969696 !important;
 }
 
-a:focus , a:hover {
+a:focus, a:hover {
     text-decoration: none !important;
     outline: none !important;
-    color: #90a4ae;
+    color: white !important;
 }
-
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: white;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #d1d1d1;
+}
 
     /* Barra de navegación */
 .barra-navegacion {
@@ -47,15 +53,18 @@ a:focus , a:hover {
 .navbar-brand {
     font-family: 'Tangerine', cursive;
     font-size: 35px;
-    color: black !important;
+    color: white !important;
 }
 body nav.navbar {
     margin-bottom: 0 !important;
 }
 .navbar-links {
-    font: 16px/1.4em "eb garamond", serif;
+    font: 16px/1.4em "Quattrocento Sans", serif;
 }
-
+.navbar-default {
+    background-color: #171d25;
+    border: none;
+}
 
 
 
@@ -85,6 +94,7 @@ body nav.navbar {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background: #202020 !important;
 }
 
 
@@ -131,7 +141,7 @@ body nav.navbar {
     top: 35px;
 }
 div h1.font_0 {
-    font-family: 'EB Garamond', serif !important;
+    font-family: 'Quattrocento Sans', serif !important;
     font-size: 29px;
     color: #302d2d !important;
     margin: 0;
@@ -142,11 +152,11 @@ h1.font_0 , h2.font_2 {
     text-align: center;
 }
 h1.font_0 a {
-    color: #302d2d;
+    color: #202020;
 }
 h2.font_2 span a {
     color: rgba(129, 129, 129, 1) !important;
-    font: italic 20px/1.4em "eb garamond",serif;
+    font: italic 20px/1.4em "Quattrocento Sans",serif;
 }
 h2.font_2 {
     margin-top: 0 !important;
@@ -157,30 +167,18 @@ h2.font_2 {
 .contenido {
     margin-bottom: 8px;
     height: 250px;
-    border-bottom: 1px solid grey;
 }
-.presentacion {
-    width: 1920px;
-    margin-top: 8px;
-    position: absolute;
-    left: 0;
-
-}
-.presentacion-borde-top {
-    border-top: 1px solid grey;
-    width: 100%;
-}
-.presentacion-borde-bottom {
-    border-bottom: 1px solid grey;
-}
-.presentacion-contenido {
-    color: #302d2d;
-    font-family: eb garamond,serif;
-    padding: 40px;
-    margin: 6px;
+.presentacion-contenido p {
+    font-family: Quattrocento Sans,serif;
     font-size: 16px;
     text-align: center !important;
-    margin-left: 16%;
+}
+.presentacion-contenido {
+  text-align: center;
+    margin-top: 50px;
+    padding: 0 200px;
+    width: 100%;
+
 }
 
 
@@ -188,7 +186,6 @@ h2.font_2 {
 /*
 *   BIOGRAFÍA >
 */
-    /* Biografía container */
 .biografia-container {
     position: absolute;
 }
@@ -210,12 +207,11 @@ h2.font_2 {
 .biografia-contenido h5 {
     font-weight: 600;
     text-align: center;
-    font-family: eb garamond,serif;
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .biografia-contenido p {
-    font-family: eb garamond,serif;
+
     font-size: 17px;
 }
 .borde-top {
@@ -232,8 +228,14 @@ h2.font_2 {
 /*
 *   GALERÍA >
 */
-    /* Container */
-
+.thumbnail {
+    padding: 0 !important;
+    border: none;
+  }
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+    border: 1px solid #d1d1d1;
+    animation-timing-function: linear;
+}
 .galeria-container {
     margin-top: 70px;
     width: 1600px;
@@ -272,7 +274,7 @@ h2.font_2 {
     background: url('../images/gente.jpg');
 }
 .categoria-sombra {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 900;
     height: 100%;
     width: 100%;
@@ -280,19 +282,23 @@ h2.font_2 {
     -moz-background-clip: text;
     background-clip: text;
 }
-.thumbnail {
-    padding: 5px;
-}
+
 .texto-sobrefoto {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 80px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-align: center;
     position: absolute;
     left: 10%;
-    bottom: 20px;
+    bottom: 60px;
 }
+.galeria-descripcion {
+    text-align: center;
+    margin-top: 70px;
+    padding: 0 200px;
+}
+
 
 
 /*
@@ -312,7 +318,7 @@ h2.font_2 {
     margin: 40px;
 }
 .lista {
-    font-family: 'eb garamond', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 24px;
 }
 
@@ -322,11 +328,12 @@ h2.font_2 {
 /*
 *   CONTACTO >
 */
+
 .contacto-container {
     width: 1400px;
 }
 .contaccto-row {
-    font-family: eb garamond,serif;
+    font-family: Quattrocento Sans,serif;
 }
 .imagen-mapa-contacto {
     width: 300px;
@@ -337,21 +344,20 @@ h2.font_2 {
     margin: 70px 100px;
 }
 .contenido-contacto {
-    font-family: eb garamond,serif;
-    margin-left: 110px;
+    font-family: Quattrocento Sans,serif;
+    margin-left: 126px;
+    text-align: center;
 }
 .titulo-contacto {
-    font-family: eb garamond,serif;
+    font-family: Quattrocento Sans,serif;
     margin-top: 100px;
     margin-left: 80px;
 }
 .titulo-contacto h3 {
-    font-family: eb garamond,serif;
     text-transform: uppercase;
     margin: 0 0 50px 0;
 }
 .titulo-contacto p {
-    font-family: eb garamond,serif;
     margin-top: 30px;
 }
 .imagen-contacto {
